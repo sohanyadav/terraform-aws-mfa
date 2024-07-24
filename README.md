@@ -84,17 +84,16 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|----------------|:--------:|
+|------|-------------|------|---------|:--------:|
 | <a name="input_environment"></a> [environment](#input\_environment) | Environment (e.g. `prod`, `dev`, `staging`). | `string` | `""` | no |
-| <a name="input_groups"></a> [groups](#input\_groups) | enable MFA for the members in these groups | `list(string)` | `[]`| no |
+| <a name="input_groups"></a> [groups](#input\_groups) | enable MFA for the members in these groups | `list(string)` | `[]` | no |
 | <a name="input_label_order"></a> [label\_order](#input\_label\_order) | Label order, e.g. `name`,`application`. | `list(any)` | <pre>[<br>  "name",<br>  "environment"<br>]</pre> | no |
-| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'sohanyadav'. | `string` | `"example"`| no |
+| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'sohanyadav'. | `string` | `"example"` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name  (e.g. `test` or `mfa`). | `string` | n/a | yes |
 | <a name="input_path"></a> [path](#input\_path) | The path of the policy in MFA. | `string` | `"/"` | no |
 | <a name="input_repository"></a> [repository](#input\_repository) | Terraform current module repo | `string` | `"https://github.com/sohanyadav/terraform-aws-mfa"` | no |
-| <a name="input_tags"></a> [tags](#input\_tags) | Additional tags (e.g. map(`BusinessUnit`,`XYZ`). | `map(any)` | `{}`                                          | no |
-| <a name="input_users"></a> [users](#input\_users) | enable MFA for these users | `list(string)` | `[]`                                          | no |
-
+| <a name="input_tags"></a> [tags](#input\_tags) | Additional tags (e.g. map(`BusinessUnit`,`XYZ`). | `map(any)` | `{}` | no |
+| <a name="input_users"></a> [users](#input\_users) | enable MFA for these users | `list(string)` | `[]` | no |
 ## Outputs
 
 | Name | Description |
