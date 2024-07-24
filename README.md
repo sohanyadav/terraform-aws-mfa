@@ -94,6 +94,7 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 | <a name="input_repository"></a> [repository](#input\_repository) | Terraform current module repo | `string` | `"https://github.com/sohanyadav/terraform-aws-mfa"` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Additional tags (e.g. map(`BusinessUnit`,`XYZ`). | `map(any)` | `{}` | no |
 | <a name="input_users"></a> [users](#input\_users) | enable MFA for these users | `list(string)` | `[]` | no |
+
 ## Outputs
 
 | Name | Description |
